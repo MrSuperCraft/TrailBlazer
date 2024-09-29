@@ -3,6 +3,16 @@
     "scheme": "acme",
     "userInterfaceStyle": "automatic",
     "orientation": "default",
+    "ios": {
+      "infoPlist": {
+        "NSMotionUsageDescription": "This app needs access to your motion data.",
+        "UIBackgroundModes": [
+          "fetch",
+          "remote-notification"
+        ]
+      },
+      "bundleIdentifier": "com.mrsupercraft"
+    },
     "web": {
       "output": "static",
       "bundler": "metro"
@@ -15,10 +25,19 @@
         }
       ]
     ],
-    "name": "code",
-    "slug": "code",
+    "name": "TrailBlazer",
+    "slug": "trailblazer",
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9af767aa-4283-4e56-b2c2-c54c5a5a2283"
+      }
+    },
+    "owner": "mrsupercraft",
+    "android": {
+      "package": "com.mrsupercraft"
     }
   }
 }
